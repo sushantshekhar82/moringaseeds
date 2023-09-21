@@ -212,6 +212,10 @@ import {
   };
   
   const MobileNavItem = ({ label, children, href }) => {
+    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkHoverColor = useColorModeValue('gray.800', 'white');
+    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+  
     const { isOpen, onToggle } = useDisclosure();
   
     return (
@@ -230,6 +234,7 @@ import {
             color={useColorModeValue('gray.600', 'gray.200')}>
            <Link to={href}><Text textAlign={'center'} fontWeight={'bold'}>{label}</Text> </Link>
           </Text>
+       
           {children && (
             <Icon
               as={ChevronDownIcon}
@@ -238,7 +243,9 @@ import {
               w={6}
               h={6}
             />
+
           )}
+
         </Flex>
   
         <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
@@ -253,7 +260,13 @@ import {
               children.map((child) => (
                 <Box>
                   <Link to={child.href}>
-                <Box key={child.label} py={2}>
+                <Box key={child.label} py={2} fontSize={'md'}
+                 fontWeight={'bold'}
+                 color={linkColor}
+                 _hover={{
+                   textDecoration: 'none',
+                   color: linkHoverColor,
+                 }} >
                 
                   {child.label}
                 
