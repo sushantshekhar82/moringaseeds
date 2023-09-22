@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import { Box, Button, Flex, Grid, GridItem, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import { Typewriter } from "react-simple-typewriter";
 import '../App.css'
+import ProductCard from '../components/ProductCard';
 const Home = () => {
 
   return (
@@ -56,7 +57,24 @@ const Home = () => {
         </GridItem>
       </Grid>
       </div>
-  
+     <Grid gridTemplateColumns={'1fr'}>
+       <GridItem>
+           <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr',lg:'1fr 1fr'}}>
+                <GridItem>
+                <ProductCard  text="20+ WAFFLES SWEET & SAVOURY" id="waffles" link="/waffels" imageSrc="./brand2.webp" constText="WAFFLES" alt="WAFFLES" />
+                </GridItem>
+                <GridItem padding={'10px'}>
+                  <Text>
+                    hello
+                  </Text>
+                   
+                </GridItem>
+           </Grid>
+       </GridItem>
+       <GridItem></GridItem>
+       <GridItem></GridItem>
+        
+     </Grid>
     </div>
   )
 }
