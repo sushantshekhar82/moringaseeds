@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { Box, Flex, Grid, GridItem, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import { Typewriter } from "react-simple-typewriter";
 import '../App.css'
 const Home = () => {
@@ -11,19 +11,18 @@ const Home = () => {
         <div id="home" className="intro">
       <Grid templateColumns={{base:'1fr',lg:'1fr 1fr'}}  justifyContent={'space-around'} alignItems={'center'} >
         <GridItem padding={'25px'}>
-       <Text fontSize={{base:'6xl',lg:'6xl'}} fontWeight={'bold'}>
-       Cultivate Success with Our High-Yield Moringa Seeds!
+       <Text fontSize={{base:'5xl',md:'7xl',lg:'7xl'}} fontWeight={'bold'} marginTop={{base:'250px',md:'',lg:'220px'}}>
+       Moringa Seeds!
           </Text>
-         <Text color={'#FFFF00'} fontSize={{base:'3xl',lg:'5xl'}} fontWeight={'bold'}>
+         <Text color={'#FFFF00'} fontSize={{base:'2xl',md:'4xl',lg:'4xl'}} fontWeight={'bold'}>
             <span>
               {" "}
               <Typewriter
                 words={[
-                  "Moringa Seeds: Your Path to Profitable Gardening Ventures!",
-                  "Start Your Moringa Garden Today with Our Premium Seeds!",
-                  "From Seed to Superfood: Cultivate Moringa at Home!",
-                  "Green Thumb's Delight: Moringa Seeds for Thriving Gardens!",
-                  " Planting Profits: Moringa Seeds for a Lucrative Future!",
+                  "Path to Profitable  Ventures!",
+                  "Seed to Superfood",
+                  
+                  "Seeds gives Lucrative Future!",
                 ]}
                 loop={500}
                 cursor
@@ -34,11 +33,26 @@ const Home = () => {
             </span>
             </Text>
 
-         
+            <Button
+             
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              fontSize={'xl'}
+              fontWeight={600}
+              width={'250px'}
+              height={'50px'}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'15px'}
+             borderRadius={'8px'}
+              _hover={{
+                bg: '#1fb125',
+              }}>
+             Buy Now
+            </Button>
         
         </GridItem>
-        <GridItem  justifyContent={'center'} alignItems={'center'} height={'300px'}>
-       .
+        <GridItem  justifyContent={'center'} alignItems={'center'} >
+     
         </GridItem>
       </Grid>
       </div>
