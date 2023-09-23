@@ -86,7 +86,8 @@ textarea{
   height:600px;
   background-image: url("./Assets/moringaleaves.webp");
   background-position:center;
-  
+ background-repeat: no-repeat;
+ background-size: cover;
   color: white;
 }
 @media screen and (max-width:900px) {
