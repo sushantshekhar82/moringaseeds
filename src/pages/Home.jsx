@@ -10,6 +10,7 @@ import {PiPottedPlantBold} from 'react-icons/pi'
 import { GiBoxUnpacking } from 'react-icons/gi';
 import ImageCard from '../components/ImageCard';
 import ImageGallery from '../components/ImageGallery';
+import Footer from '../components/Footer';
 const Home = () => {
 
   return (
@@ -76,10 +77,10 @@ const Home = () => {
       </Grid>
       </Box>
    <ImageGallery/>
-  <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}} justifyContent={'center'} alignItems={'center'}>
+  <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}} justifyContent={'center'} alignItems={'center'} gap={'10px'}>
       <GridItem justifyContent={'center'} alignItems={'center'} >
          <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
-      <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Heading1</Text>
+      <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Bhagya KDM 01 Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
       <Button
               as={'a'}
@@ -98,8 +99,8 @@ const Home = () => {
       <GridItem>
           <Grid gridTemplateRows={{base:'100%',md:'80% 20%',lg:'80% 20%'}} justifyContent={'center'} alignItems={'center'} gap={5}>
           <GridItem marginTop={'10px'}> <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
-          <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Heading1</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}} > Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
+          <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>PKM Seeds Drumstick Seeds</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}} >  PKM Seeds Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -119,8 +120,8 @@ const Home = () => {
           </Grid>
       </GridItem>
       <GridItem justifyContent={'center'} alignItems={'center'}>  <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
-      <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Heading1</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
+      <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>ODC 3 Drumstick Seeds</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.</Text>
 
       <Button
               as={'a'}
@@ -270,6 +271,7 @@ const Home = () => {
     </Box></GridItem>
 
         </Grid>
+        <Footer/>
     </div>
   )
 }

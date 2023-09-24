@@ -35,14 +35,14 @@ const ImageGallery = () => {
         </Grid>
         <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr',lg:'1fr 1fr'}} height={'500px'}borderRadius={'10px'} width={{base:'98%',md:'90%',lg:'80%'}} margin={'auto'} gap={2} marginTop={'10px'}>
            
-            <GridItem >
+            <GridItem  paddingTop={{base:'7px',md:'0px',lg:'0px'}}>
               <Grid gridTemplateRows={'50% 50%'} gap={1} >
                 <GridItem borderRadius={'10px'}  overflow="hidden" >
                 <GalleryCard imageUrl="./gallery22.webp" height="250px" href="/" />
                 </GridItem>
                 <GridItem>
                 <Grid gridTemplateColumns={{base:'1fr 1fr',md:'1fr 1fr',lg:'1fr 1fr'}} gap={2}>
-                       <GridItem borderRadius={'10px'} overflow="hidden" >
+                       <GridItem borderRadius={'10px'} overflow="hidden"  >
                        <GalleryCard imageUrl="./gallery23.webp" height="250px" href="/" />
                        </GridItem>
                        <GridItem borderRadius={'10px'} overflow="hidden" >
