@@ -301,12 +301,12 @@ import {
           href: '/',
         },
         {
-          label: 'Bhagya RDM 01',
+          label: 'Bhagya KDM 01',
           subLabel: '',
           href: '/',
         },
         {
-          label: 'PRM Seeds',
+          label: 'PKM Seeds',
           subLabel: '',
           href: '/',
         },
