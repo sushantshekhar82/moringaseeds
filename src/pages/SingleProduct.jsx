@@ -83,18 +83,19 @@ const SingleProduct = () => {
       
         <Text as={'h2'} fontSize={{base:'xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'} paddingLeft={'10px'}>₹100/1000g</Text>
         <Text as={'h2'} width={'90%'} paddingLeft={'10px'} fontSize={{base:'xl',md:'2xl',lg:'2xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields</Text>
-       <Flex justifyContent={'space-between'}>
-        <Box marginTop={'10px'} paddingLeft={'10px'}>
-        <Flex justifyContent={'space-around'} gap={2} alignItems={'center'} >
-        <a href="tel: 8123143554"> <Button bgColor={'blue.500'} height={'50px'} fontWeight={'bold'} color={'white'} gap={1} _hover={{bgColor:'blue'}} alignItems={'center'} marginLeft={'5px'}><AiOutlinePhone fontSize={'20px'}/> +919606318072</Button></a><a
+     
+        <Box marginTop={'10px'} >
+        <Flex justifyContent={'space-around'} gap={1} alignItems={'center'} marginTop={'5px'} >
+        <a href="tel: 8123143554">
+           <Button bgColor={'blue.500'} height={'50px'} fontWeight={'bold'} color={'white'} gap={1}  _hover={{bgColor:'blue'}} alignItems={'center'} ><AiOutlinePhone fontSize={'20px'}/>Buy on Call</Button></a><a
             href="https://api.whatsapp.com/send?phone=918123811002&text=Hi%20I%20want%20ODC%203%20Seeds"
             target="_blank"
             rel="noreferrer"
-          ><Button bgColor={'green.400'} height={'50px'} color={'white'} fontWeight={'bold'} gap={2} _hover={{bgColor:'green'}} ><BsWhatsapp fontSize={'20px'}/>9606318072</Button></a>
+          ><Button bgColor={'green.400'} height={'50px'} color={'white'} fontWeight={'bold'} gap={1} _hover={{bgColor:'green'}} ><BsWhatsapp fontSize={'20px'}/>Buy on Whatsapp</Button></a>
           </Flex>
         </Box>
        
-        </Flex>
+       
        </GridItem>
     </Grid>
 
