@@ -117,7 +117,7 @@ export default function Footer() {
             Bhagya KDM 01 Seeds
             </Box>
             <Box as="a" href={'#'}>
-            PKM Seeds Drumstick Seeds
+            PKM Drumstick Seeds
             </Box>
             <Box as="a" href={'#'}>
             ODC 3 Drumstick Seeds

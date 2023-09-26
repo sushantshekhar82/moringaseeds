@@ -11,6 +11,7 @@ import { GiBoxUnpacking } from 'react-icons/gi';
 import ImageCard from '../components/ImageCard';
 import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 const Home = () => {
 
   return (
@@ -70,18 +71,19 @@ const Home = () => {
         <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Brands We sell</Text>
       <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'10px'}>
            <GridItem>
-           <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/" />
+           <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" />
            </GridItem>
-           <GridItem>  <ImageCard imageUrl="./brand3.webp" text="Bhagya KDM 01 Seeds" href="/" /></GridItem>
-           <GridItem>  <ImageCard imageUrl="./brand2.webp" text="PKM Seeds" href="/" /></GridItem>
+           <GridItem>  <ImageCard imageUrl="./brand3.webp" text="Bhagya KDM 01 Seeds" href="/bhagyakdmseeds" /></GridItem>
+           <GridItem>  <ImageCard imageUrl="./brand2.webp" text="PKM Seeds" href="/pkmseeds" /></GridItem>
       </Grid>
       </Box>
    <ImageGallery/>
   <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}} justifyContent={'center'} alignItems={'center'} gap={'10px'}>
-      <GridItem justifyContent={'center'} alignItems={'center'} >
+      <GridItem justifyContent={'center'} alignItems={'center'}  marginTop={'15px'} >
          <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Bhagya KDM 01 Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
+     <Link to="/bhagyakdmseeds">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -89,18 +91,21 @@ const Home = () => {
               fontWeight={600}
               color={'white'}
               bg={'#1fb125'}
-             
+             marginTop={'5px'}
               _hover={{
                 bg: '#1fb125',
               }}>
              Buy Now
             </Button>
+            </Link>
       </GridItem>
       <GridItem>
           <Grid gridTemplateRows={{base:'100%',md:'80% 20%',lg:'80% 20%'}} justifyContent={'center'} alignItems={'center'} gap={5}>
           <GridItem marginTop={'10px'}> <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
-          <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>PKM Seeds Drumstick Seeds</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}} >  PKM Seeds Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
+          <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>PKM Drumstick Seeds</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}} >  PKM  Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
+      <Link to="/pkmseeds">
+    
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -108,21 +113,22 @@ const Home = () => {
               fontWeight={600}
               color={'white'}
               bg={'#1fb125'}
-             
+              marginTop={'5px'}
               _hover={{
                 bg: '#1fb125',
               }}>
              Buy Now
             </Button>
+            </Link>
 
 </GridItem>
           <GridItem display={{base:'none',md:'block',lg:'block'}}>  <Image src='./moringaleaf.webp' alt="seed image " width={'200px'} margin={'auto'}/></GridItem>
           </Grid>
-      </GridItem>
-      <GridItem justifyContent={'center'} alignItems={'center'}>  <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
+      </GridItem >
+      <GridItem justifyContent={'center'} alignItems={'center'}  marginTop={'15px'} >  <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>ODC 3 Drumstick Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.</Text>
-
+      <Link to="/odc3seeds">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -130,12 +136,13 @@ const Home = () => {
               fontWeight={600}
               color={'white'}
               bg={'#1fb125'}
-             
+              marginTop={'5px'}
               _hover={{
                 bg: '#1fb125',
               }}>
              Buy Now
             </Button>
+            </Link> 
 </GridItem>
   </Grid>
 

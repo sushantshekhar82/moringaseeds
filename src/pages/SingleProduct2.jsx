@@ -31,7 +31,7 @@ function Star({ rating }) {
       </Box>
     );
   }
-const SingleProduct = () => {
+const SingleProducttwo = () => {
     const [selectedImage, setSelectedImage] = useState('./brand1.webp');
     const thumbnails = [
     
@@ -71,7 +71,7 @@ const SingleProduct = () => {
     </GridItem>
        <GridItem  textAlign={'left'}>
         
-       <Text  as={'h1'} fontSize={{base:'3xl',md:'4xl',lg:'5xl'}}  fontWeight={'bold'} paddingLeft={'10px'}>ODC 3 Drumstick Seeds</Text>
+       <Text  as={'h1'} fontSize={{base:'3xl',md:'4xl',lg:'5xl'}}  fontWeight={'bold'} paddingLeft={'10px'}>Bhagya KDM 01 Seeds</Text>
      
        
      
@@ -82,12 +82,12 @@ const SingleProduct = () => {
        
       
         <Text as={'h2'} fontSize={{base:'xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'} paddingLeft={'10px'}>₹100/1000g</Text>
-        <Text as={'h2'} width={'90%'} paddingLeft={'10px'} fontSize={{base:'xl',md:'2xl',lg:'2xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields</Text>
+        <Text as={'h2'} width={'90%'} paddingLeft={'10px'} fontSize={{base:'xl',md:'2xl',lg:'2xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
        <Flex justifyContent={'space-between'}>
-        <Box marginTop={'10px'} paddingLeft={'10px'}>
+       <Box marginTop={'10px'} paddingLeft={'10px'}>
         <Flex justifyContent={'space-around'} gap={2} alignItems={'center'} >
         <a href="tel: 8123143554"> <Button bgColor={'blue.500'} height={'50px'} fontWeight={'bold'} color={'white'} gap={1} _hover={{bgColor:'blue'}} alignItems={'center'} marginLeft={'5px'}><AiOutlinePhone fontSize={'20px'}/> +919606318072</Button></a><a
-            href="https://api.whatsapp.com/send?phone=918123811002&text=Hi%20I%20want%20ODC%203%20Seeds"
+            href="https://api.whatsapp.com/send?phone=918123811002&text=Hi%20I%20want%20Bhagya%20KDM%2001%20Seeds"
             target="_blank"
             rel="noreferrer"
           ><Button bgColor={'green.400'} height={'50px'} color={'white'} fontWeight={'bold'} gap={2} _hover={{bgColor:'green'}} ><BsWhatsapp fontSize={'20px'}/>9606318072</Button></a>
@@ -106,4 +106,4 @@ const SingleProduct = () => {
   )
 }
 
-export default SingleProduct
+export default SingleProducttwo
