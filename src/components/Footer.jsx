@@ -110,7 +110,7 @@ export default function Footer() {
             </Box>
        
           </Stack>
-          <Stack align={'flex-start'}>
+          <Stack align={{base:'flex-start',md:'flex-end',lg:'center'}}>
             <ListHeader>Our Brands</ListHeader>
       
             <Box as="a" href={'#'}>
@@ -123,27 +123,17 @@ export default function Footer() {
             ODC 3 Drumstick Seeds
             </Box>
           </Stack>
-          <Stack align={'center'} margin={'auto'}>
-            <ListHeader><Text >Stay up to date</Text></ListHeader>
-            <Stack direction={'row'}>
-              <Input
-                placeholder={'Your email address'}
-                bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-                border={0}
-                _focus={{
-                  bg: 'whiteAlpha.300',
-                }}
-              />
-              <IconButton
-                bg={useColorModeValue('green.400', 'green.800')}
-                color={useColorModeValue('white', 'gray.800')}
-                _hover={{
-                  bg: 'green.600',
-                }}
-                aria-label="Subscribe"
-                icon={<BiMailSend />}
-              />
-            </Stack>
+          <Stack align={{base:'flex-start',md:'flex-end',lg:'flex-end'}}>
+           
+            <ListHeader>Contact Us</ListHeader>
+          <Box> <Text as={'h1'}>Email:- reddyagric@gmail.com</Text></Box>
+          <Box> <Text as={'h1'}>Phone:- 8123143554</Text></Box>
+
+          <Box> <Text as={'h1'}>Whatsapp:- 8123811002</Text></Box>
+
+
+
+         
           </Stack>
         </SimpleGrid>
       </Container>

@@ -12,6 +12,7 @@ import ImageCard from '../components/ImageCard';
 import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { BiLogoWhatsapp } from 'react-icons/bi';
 const Home = () => {
 
   return (
@@ -67,22 +68,69 @@ const Home = () => {
       </div>
  
 
-      <Box padding={'10px'}>
-        <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Brands We sell</Text>
-      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'10px'}>
+      <Box padding={'10px'} >
+        <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Products We sell</Text>
+     <Box width={'70%'} margin={'auto'}>
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
-           <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" />
+           <Link to={'/bhagyakdmseeds'}>
+            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}>
+               <Box position={'relative'}>
+                <Image src="./brand11.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-10%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
+               
+               </Box>
+            </Box>
+            </Link>
+           {/* <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" /> */}
            </GridItem>
-           <GridItem>  <ImageCard imageUrl="./brand3.webp" text="Bhagya KDM 01 Seeds" href="/bhagyakdmseeds" /></GridItem>
-           <GridItem>  <ImageCard imageUrl="./brand2.webp" text="PKM Seeds" href="/pkmseeds" /></GridItem>
-      </Grid>
+           <GridItem>
+            <Link to={'/pkmseeds'}>
+            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}>
+               <Box position={'relative'}>
+                <Image src="./brand12.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-13%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+               
+               </Box>
+            </Box>
+            </Link>
+           </GridItem>
+           <GridItem>
+            <Link to={'/odc3seeds'}>
+            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'} >
+               <Box position={'relative'}>
+                <Image src="./brand13.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-15%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> ODC 3 Drumstick Seeds</Text>
+               
+               </Box>
+            </Box>
+            </Link>
+         
+           </GridItem>
+            </Grid>
+      </Box>
       </Box>
    <ImageGallery/>
   <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}} justifyContent={'center'} alignItems={'center'} gap={'10px'}>
       <GridItem justifyContent={'center'} alignItems={'center'}  marginTop={'15px'} >
          <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Bhagya KDM 01 Seeds</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
      <Link to="/bhagyakdmseeds">
       <Button
               as={'a'}
@@ -103,7 +151,7 @@ const Home = () => {
           <Grid gridTemplateRows={{base:'100%',md:'80% 20%',lg:'80% 20%'}} justifyContent={'center'} alignItems={'center'} gap={5}>
           <GridItem marginTop={'10px'}> <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
           <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>PKM Drumstick Seeds</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}} >  PKM  Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}} >  PKM  Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
       <Link to="/pkmseeds">
     
       <Button
@@ -127,7 +175,7 @@ const Home = () => {
       </GridItem >
       <GridItem justifyContent={'center'} alignItems={'center'}  marginTop={'15px'} >  <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>ODC 3 Drumstick Seeds</Text>
-      <Text as={'h3'} fontSize={{base:'xl',md:'xl',lg:'xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.</Text>
+      <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.</Text>
       <Link to="/odc3seeds">
       <Button
               as={'a'}
@@ -271,8 +319,8 @@ const Home = () => {
         zIndex="1"
         padding={5}
       >
-        <Text fontSize="24px" fontWeight={'bold'}>Clean Design</Text>
-        <Text fontsize={'16px'}>Experience the beauty of our clean, elegant home decor. With simple designs that are sophisticated and timeless, we create spaces that everyone can appreciate.</Text>
+        <Text fontSize="24px" fontWeight={'bold'}>High-Quality Seeds</Text>
+        <Text fontsize={'16px'}>We offer a diverse range of seeds, including rare and heirloom varieties.</Text>
      
       </Flex>
     </Box></GridItem>
