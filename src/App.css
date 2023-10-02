@@ -101,6 +101,55 @@ textarea{
     color: white;
     background-position: left;
   }}
+  .form{
+    background-color: transparent;
+    width: 100%;
+  }
+  .formhome{
+    background-color: transparent;
+    width: 100%;
+  }
+  input{
+    width: 90%;
+    height: 40px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+    padding-left:5px ;
+  }
+  textarea{
+    width: 90%;
+    padding-left:5px ;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .btn{
+    background-color:#ED64A6;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .whats-app {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 4px 3px #999;
+    right: 15px; /* Change 'left' to 'right' */
+    z-index: 100;
+  }
+  
+  
+  .my-float {
+    margin-top: 10px;
+  }
 
 
     @media screen and (max-width:520px) {

@@ -13,11 +13,13 @@ import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import { BiLogoWhatsapp } from 'react-icons/bi';
+import HomeModal from '../components/Modal';
 const Home = () => {
 
   return (
     <div>
         <Navbar/>
+        <HomeModal/>
         <div id="home" className="intro">
       <Grid templateColumns={{base:'1fr',lg:'1fr 1fr'}}  justifyContent={'space-around'} alignItems={'center'} >
         <GridItem padding={'25px'}>
@@ -74,7 +76,7 @@ const Home = () => {
       <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
            <Link to={'/bhagyakdmseeds'}>
-            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}>
+            <Box >
                <Box position={'relative'}>
                 <Image src="./brand11.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
                 <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
@@ -83,7 +85,26 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
-               
+               <Flex justifyContent={'space-between'} alignItems={'center'}>
+                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
+              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+                 <Link to="/bhagyakdmseeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}>
+             Buy Now
+            </Button>
+            </Link>
+               </Flex>
                </Box>
             </Box>
             </Link>
@@ -91,7 +112,7 @@ const Home = () => {
            </GridItem>
            <GridItem>
             <Link to={'/pkmseeds'}>
-            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}>
+            <Box >
                <Box position={'relative'}>
                 <Image src="./brand12.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
                 <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
@@ -100,14 +121,33 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
-               
+                <Flex justifyContent={'space-between'} alignItems={'center'}>
+                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
+              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+                 <Link to="/pkmseeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}>
+             Buy Now
+            </Button>
+            </Link>
+               </Flex>
                </Box>
             </Box>
             </Link>
            </GridItem>
            <GridItem>
             <Link to={'/odc3seeds'}>
-            <Box boxShadow={'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'} >
+            <Box  >
                <Box position={'relative'}>
                 <Image src="./brand13.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
                 <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
@@ -116,7 +156,28 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> ODC 3 Drumstick Seeds</Text>
-               
+                <Flex justifyContent={'space-between'} alignItems={'center'}>
+                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
+              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+                 <Link to="/odc3seeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}
+              
+              >
+             Buy Now
+            </Button>
+            </Link>
+               </Flex>
                </Box>
             </Box>
             </Link>
@@ -326,6 +387,37 @@ const Home = () => {
     </Box></GridItem>
 
         </Grid>
+        <Box padding={'10px'} >
+    <Grid templateColumns={{base:'1fr',lg:'1fr 1fr'}} justifyContent={'center'} alignItems={'center'}>
+           <GridItem>
+            <Image src="./contact.webp" alt="contactus image" display={{base:'none',md:'block',lg:'block'}} />
+           </GridItem>
+           <GridItem>
+           <Stack spacing={8} mx={'auto'}  py={5} px={2}  justifyContent={'center'} alignItems={'center'}>
+        <Stack align={'center'}>
+          <Heading fontSize={'4xl'} textAlign={'center'} fontWeight={'bold'} color={'#1fb125'}>
+            Get in Touch
+          </Heading>
+          <Text fontSize={'lg'} color={'gray.600'}>
+          Our Representatives will reach you in few moments ✌️
+          </Text>
+        </Stack>
+        <Box className="form">
+        <form action="mailto:reddyagric@gmail.com" method="post" enctype="text/plain" autoComplete='off'>
+   
+    <input type="text" name="Name" placeholder="Name" required/><br/>
+    <input type="number" name="contact number" placeholder='Contact Number' required min="10" max="10"/>
+    <input type="text" name="city" placeholder='City' required/>
+    <input type="email" name="email" placeholder="Your Email" required/><br/>
+    
+    <textarea name="body" rows="5" cols="30" placeholder="Your Message here" required></textarea><br/>
+    <input type="submit" value="Submit" style={{backgroundColor:'#1fb125',fontsize:'18px',fontWeight:'bold',color:'white',border:'none',cursor:'pointer'}} />
+  </form>
+  </Box>
+      </Stack>
+           </GridItem>
+        </Grid>
+        </Box>
         <Footer/>
     </div>
   )

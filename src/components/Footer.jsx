@@ -70,31 +70,33 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
   return (
     <Box
-      bg={'white'}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+     background={'url(./pattern.webp)'}
+     backgroundSize={'contain'}
+
+   >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-            <Image src='./moringalogo.png' alt='Moringa Seeds Logo' width={'70%'} height={'100%'} margin={'auto'}/>
+            <Image src='./logo.png' alt='Moringa Seeds Logo' width={'70%'} height={'100%'} margin={'auto'}/>
              
             </Box>
-            <Text fontSize={'sm'}>© 2022 Reddy Argic. All rights reserved</Text>
+            <Text fontSize={'sm'}  color={'white'}>© 2022 Reddy Argic. All rights reserved</Text>
             <Stack direction={'row'} spacing={6} margin={'auto'}>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+              <SocialButton label={'Twitter'} href={'#'} >
+                <FaTwitter color='white' />
               </SocialButton>
               <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
+                <FaYoutube color='white' />
               </SocialButton>
               <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
+                <FaInstagram color='white'/>
               </SocialButton>
             </Stack>
           </Stack>
-          <Stack align={'flex-start'}>
+          <Stack align={'flex-start'}    color={'white'}>
             <ListHeader>Quick Links</ListHeader>
             <Box as="a" href={'#'}>
              Home
@@ -110,7 +112,7 @@ export default function Footer() {
             </Box>
        
           </Stack>
-          <Stack align={{base:'flex-start',md:'flex-end',lg:'center'}}>
+          <Stack align={{base:'flex-start',md:'flex-end',lg:'center'}}    color={'white'}>
             <ListHeader>Our Brands</ListHeader>
       
             <Box as="a" href={'#'}>
@@ -123,7 +125,7 @@ export default function Footer() {
             ODC 3 Drumstick Seeds
             </Box>
           </Stack>
-          <Stack align={{base:'flex-start',md:'flex-end',lg:'flex-end'}}>
+          <Stack align={{base:'flex-start',md:'flex-end',lg:'flex-end'}}    color={'white'}>
            
             <ListHeader>Contact Us</ListHeader>
           <Box> <Text as={'h1'}>Email:- reddyagric@gmail.com</Text></Box>
