@@ -118,24 +118,23 @@ const SingleProduct = () => {
             divider={
               <StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />
             }>
-            <VStack spacing={{ base: 4, sm: 6 }}>
-              <Text
-                color={useColorModeValue('gray.500', 'gray.400')}
-                fontSize={'2xl'}
-                fontWeight={'300'}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore
-              </Text>
+            <VStack >
+           
+              <Text fontSize={'2xl'} fontWeight={600} color={useColorModeValue('gray.500', 'gray.400')}>
+              Superior Quality ODC 3 Drumstick Seeds from Reddy Agric Farmers
+               </Text>
               <Text fontSize={'lg'}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet
-                at delectus doloribus dolorum expedita hic, ipsum maxime modi nam officiis
-                porro, quae, quisquam quos reprehenderit velit? Natus, totam.
+              Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.
               </Text>
             </VStack>
-            <Stack direction="row" alignItems="center" >
-            <MdLocalShipping />
+            <Stack direction="column" alignItems="left" >
             
+            <Text>🆓 Postage Charges Free 🆓🚚( 500g 1kg )
+</Text>
+<Flex alignItems={'center'}>
+<MdLocalShipping />
             <Text>2-3 business days delivery</Text>
+            </Flex>   
           </Stack>
           <Box>
               <Text
@@ -144,19 +143,20 @@ const SingleProduct = () => {
                 fontWeight={'500'}
                 textTransform={'uppercase'}
                 mb={'4'}>
-                Features
+                Price List
               </Text>
 
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                 <List spacing={2}>
-                  <ListItem>Chronograph</ListItem>
-                  <ListItem>Master Chronometer Certified</ListItem>{' '}
-                  <ListItem>Tachymeter</ListItem>
+                  <ListItem> Rs 220 - 25g +  Parcel 📦 Charge  60</ListItem>
+                  <ListItem> Rs 299 - 50g +  Parcel 📦 Charge 60</ListItem>{' '}
+                  <ListItem> Rs 400 - 100g +  Parcel 📦 Charge 60</ListItem>
+                  <ListItem> Rs 550 - 150g +  Parcel 📦 Charge 60</ListItem>
                 </List>
                 <List spacing={2}>
-                  <ListItem>Anti‑magnetic</ListItem>
-                  <ListItem>Chronometer</ListItem>
-                  <ListItem>Small seconds</ListItem>
+                  <ListItem>Rs 750 - 250g +  Parcel 📦 Charge 60</ListItem>
+                  <ListItem>Rs 1400 - 500gm, Free Delivery 🚚</ListItem>
+                  <ListItem>Rs 1400 - 500gm, Free Delivery 🚚</ListItem>
                 </List>
               </SimpleGrid>
             </Box> 
@@ -198,81 +198,88 @@ const SingleProduct = () => {
     <Box>
 
     </Box>
-    <Text
-                fontSize={{ base: '16px', lg: '18px' }}
-                color={useColorModeValue('yellow.500', 'yellow.300')}
-                fontWeight={'500'}
-                textTransform={'uppercase'}
-                mb={'2'}
-                textAlign={'left'}
-                >
-               Description
-              </Text>
-    <Text textAlign={'left'} fontSize={'lg'}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet
-                at delectus doloribus dolorum expedita hic, ipsum maxime modi nam officiis
-                porro, quae, quisquam quos reprehenderit velit? Natus, totam.
-              </Text>
-    <Box textAlign={'left'} mb={'20px'} >
-              <Text
-                fontSize={{ base: '16px', lg: '18px' }}
-                color={useColorModeValue('yellow.500', 'yellow.300')}
-                fontWeight={'500'}
-                textTransform={'uppercase'}
-                mb={'2'}
-                mt={'4'}>
-                Product Details
-              </Text>
-
-              <List spacing={2}>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Between lugs:
-                  </Text>{' '}
-                  20 mm
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Bracelet:
-                  </Text>{' '}
-                  leather strap
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Case:
-                  </Text>{' '}
-                  Steel
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Case diameter:
-                  </Text>{' '}
-                  42 mm
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Dial color:
-                  </Text>{' '}
-                  Black
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Crystal:
-                  </Text>{' '}
-                  Domed, scratch‑resistant sapphire crystal with anti‑reflective treatment
-                  inside
-                </ListItem>
-                <ListItem>
-                  <Text as={'span'} fontWeight={'bold'}>
-                    Water resistance:
-                  </Text>{' '}
-                  5 bar (50 metres / 167 feet){' '}
-                </ListItem>
-              </List>
-            </Box>
+ 
     </Box>
-
-           
+    <Box padding={'10px'} >
+<Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Our Top Selling </Text>
+     <Box width={{base:'100%',md:'70%',lg:'70%'}} paddingLeft={'5px'} >
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'left'} alignItems={'center'} gap={'20px'}>
+           <GridItem>
+           <Link to={'/bhagyakdmseeds'}>
+            <Box >
+               <Box position={'relative'}>
+                <Image src="./brand11.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-10%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
+               <Flex justifyContent={'space-between'} alignItems={'center'}>
+                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
+              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+                 <Link to="/bhagyakdmseeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}>
+             Buy Now
+            </Button>
+            </Link>
+               </Flex>
+               </Box>
+            </Box>
+            </Link>
+           {/* <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" /> */}
+           </GridItem>
+           <GridItem>
+            <Link to={'/pkmseeds'}>
+            <Box >
+               <Box position={'relative'}>
+                <Image src="./brand12.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-13%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+                <Flex justifyContent={'space-between'} alignItems={'center'}>
+                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
+              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+                 <Link to="/pkmseeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}>
+             Buy Now
+            </Button>
+            </Link>
+               </Flex>
+               </Box>
+            </Box>
+            </Link>
+           </GridItem>
+         
+            </Grid>
+      </Box>
+      </Box>
+            
     <Footer/>
   </Box>
 
