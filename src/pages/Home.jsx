@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import { Box, Button, Flex, Grid, GridItem, Heading, Icon, Image, Stack, Text } from '@chakra-ui/react'
 import { Typewriter } from "react-simple-typewriter";
 import '../App.css'
+import { Helmet } from 'react-helmet';
 import ProductCard from '../components/ProductCard';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { MdOutlineSupportAgent } from 'react-icons/md';
@@ -12,29 +13,62 @@ import ImageCard from '../components/ImageCard';
 import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import { BiLogoWhatsapp } from 'react-icons/bi';
+import { BiLogoWhatsapp, BiRightArrow } from 'react-icons/bi';
 import HomeModal from '../components/Modal';
 import Carousel from '../components/SliderwithText';
-
+import Slider from '../components/Slider';
+import { ArrowRightIcon } from '@chakra-ui/icons';
+import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
+function Star({ rating }) {
+  return (
+    <Box display="flex" alignItems="center">
+      {Array(5)
+        .fill("")
+        .map((_, i) => {
+          const roundedRating = Math.round(rating * 2) / 2;
+          if (roundedRating - i >= 1) {
+            return (
+              <BsStarFill
+                key={i}
+                style={{ marginLeft: "1" }}
+                color={i < rating ? "#e4c72b" : "#e4c72b"}
+              />
+            );
+          }
+          if (roundedRating - i === 0.5) {
+            return <BsStarHalf  key={i} style={{ marginLeft: "1" }} color='#e4c72b' />;
+          }
+          return <BsStar  key={i} style={{ marginLeft: "1", }} />;
+        })}
+    </Box>
+  );
+}
 
 
 const Home = () => {
 
   return (
     <div>
+       <Helmet>
+  <meta charset="UTF-8"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
+<title>Reddy Agric Moringa Seeds | Drumstick Seeds </title>
+</Helmet>
         <Navbar/>
         <HomeModal/>
         <Box marginTop={'80px'}>
-        <Carousel/>
+        <Slider/>
         </Box>
+       
 
      
  
 
       <Box padding={'10px'} >
-        <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Products We sell</Text>
-     <Box width={'70%'} margin={'auto'}>
-      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
+      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Our Top Selling </Text>
+     <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr 1fr',lg:'1fr 1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
            <Link to={'/bhagyakdmseeds'}>
             <Box >
@@ -46,6 +80,10 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
+               <Flex>
+               <Star rating={4.2} />
+               (15)
+               </Flex>
                <Flex justifyContent={'space-between'} alignItems={'center'}>
                 <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
               fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
@@ -82,6 +120,10 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+               <Flex>
+               <Star rating={4.7} />
+               (18)
+               </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
                 <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
               fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
@@ -117,6 +159,10 @@ const Home = () => {
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> ODC 3 Drumstick Seeds</Text>
+               <Flex>
+               <Star rating={5} />
+               (22)
+               </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
                 <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
               fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
@@ -143,6 +189,24 @@ const Home = () => {
             </Box>
             </Link>
          
+           </GridItem>
+           <GridItem>
+           <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              width={'250px'}
+              fontSize={'xl'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+              marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}
+              gap={2}
+              alignItems={'center'}>
+            More Products <ArrowRightIcon/>
+            </Button>
            </GridItem>
             </Grid>
       </Box>

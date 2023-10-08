@@ -2,9 +2,15 @@ import { useState, useEffect } from 'react';
 import { Box, Flex, Button } from '@chakra-ui/react';
 
 const images = [
-    './moringa5.webp',
-    './moringa6.webp',
-    './moringa7.webp',
+    './gallery1.webp',
+    './gallery2.webp',
+    
+    
+    './gallery5.webp',
+   
+    './gallery22.webp',
+    './gallery23.webp',
+    './gallery24.webp'
   ];
 
 const Slider = () => {
@@ -33,7 +39,7 @@ const Slider = () => {
   return (
     <Box marginTop={'10px'} marginBottom={'5px'}>
     <Box position="relative">
-      <Box position="relative" width="100%" height={{base:'300px',lg:"400px"}}>
+      <Box position="relative" width="100%" height={{base:'300px',md:'300px',lg:"400px"}}>
         {images.map((image, index) => (
           <Box
             key={index}
@@ -47,7 +53,7 @@ const Slider = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              style={{ objectFit: 'cover', width: '100%', height: '100%', }}
+              style={{ objectFit:'revert-layer', width: '100%', height: '100%' }}
             />
           </Box>
         ))}
