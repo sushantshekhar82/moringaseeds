@@ -84,7 +84,7 @@ import {
             {/* <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button> */}
-              <Link to='/contactus'>
+              <Link to='/products'>
             <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}

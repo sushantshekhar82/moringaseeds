@@ -5,7 +5,7 @@ import GalleryCard from './GalleryCard';
 const ImageGallery = () => {
   return (
     <Box>
-        <Text as={'h1'}  color={'#1fb125'}
+        <Text as={'h1'}  color={'black'}
              
               fontSize={{base:'4xl',md:'5xl',lg:'5xl'}}
               fontWeight="bold">Our Gallery</Text>

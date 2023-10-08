@@ -205,7 +205,10 @@ setBgColor1('')
     <BreadcrumbLink  fontWeight={'bold'} ><Link to="/">Home</Link></BreadcrumbLink>
   </BreadcrumbItem>
 
-  
+  <BreadcrumbItem>
+    <BreadcrumbLink  fontWeight={'bold'} ><Link to="/products">Products</Link></BreadcrumbLink>
+  </BreadcrumbItem>
+
 
   <BreadcrumbItem isCurrentPage>
     <BreadcrumbLink >ODC 3 Drumstick Seeds</BreadcrumbLink>
@@ -381,9 +384,9 @@ setBgColor1('')
  
     </Box>
     <Box padding={'10px'} >
-<Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Related Products </Text>
-     <Box width={{base:'100%',md:'70%',lg:'70%'}} paddingLeft={'5px'} >
-      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'left'} alignItems={'center'} gap={'20px'}>
+      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Our Top Selling </Text>
+     <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr ',lg:'1fr 1fr 1fr '}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
            <Link to={'/bhagyakdmseeds'}>
             <Box >
@@ -395,9 +398,12 @@ setBgColor1('')
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
+               <Flex>
+               <Star rating={4.2} />
+               (15)
+               </Flex>
                <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+               
                  <Link to="/bhagyakdmseeds">
       <Button
               as={'a'}
@@ -411,7 +417,7 @@ setBgColor1('')
               _hover={{
                 bg: '#1fb125',
               }}>
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -431,9 +437,12 @@ setBgColor1('')
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+               <Flex>
+               <Star rating={4.7} />
+               (18)
+               </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+               
                  <Link to="/pkmseeds">
       <Button
               as={'a'}
@@ -447,7 +456,7 @@ setBgColor1('')
               _hover={{
                 bg: '#1fb125',
               }}>
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -456,6 +465,7 @@ setBgColor1('')
             </Link>
            </GridItem>
          
+           
             </Grid>
       </Box>
       </Box>

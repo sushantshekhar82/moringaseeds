@@ -65,12 +65,13 @@ const Home = () => {
      
  
 
+     
       <Box padding={'10px'} >
-      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'#1fb125'}>Our Top Selling </Text>
+      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Our Top Selling </Text>
      <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
       <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr 1fr',lg:'1fr 1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
-           <Link to={'/bhagyakdmseeds'}>
+           <Link to={'/products'}>
             <Box >
                <Box position={'relative'}>
                 <Image src="./brand11.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
@@ -85,9 +86,8 @@ const Home = () => {
                (15)
                </Flex>
                <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
-                 <Link to="/bhagyakdmseeds">
+               
+                 <Link to="/products">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -100,7 +100,7 @@ const Home = () => {
               _hover={{
                 bg: '#1fb125',
               }}>
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -110,7 +110,7 @@ const Home = () => {
            {/* <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" /> */}
            </GridItem>
            <GridItem>
-            <Link to={'/pkmseeds'}>
+            <Link to={'/products'}>
             <Box >
                <Box position={'relative'}>
                 <Image src="./brand12.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
@@ -125,9 +125,8 @@ const Home = () => {
                (18)
                </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
-                 <Link to="/pkmseeds">
+               
+                 <Link to="/products">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -140,7 +139,7 @@ const Home = () => {
               _hover={{
                 bg: '#1fb125',
               }}>
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -149,7 +148,7 @@ const Home = () => {
             </Link>
            </GridItem>
            <GridItem>
-            <Link to={'/odc3seeds'}>
+            <Link to={'/products'}>
             <Box  >
                <Box position={'relative'}>
                 <Image src="./brand13.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
@@ -164,8 +163,7 @@ const Home = () => {
                (22)
                </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+              
                  <Link to="/odc3seeds">
       <Button
               as={'a'}
@@ -181,7 +179,7 @@ const Home = () => {
               }}
               
               >
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -217,7 +215,7 @@ const Home = () => {
          <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>Bhagya KDM 01 Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}}> Purchase Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
-     <Link to="/bhagyakdmseeds">
+     <Link to="/products">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}

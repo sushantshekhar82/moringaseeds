@@ -204,9 +204,9 @@ setBgColor1('')
   <BreadcrumbItem>
     <BreadcrumbLink  fontWeight={'bold'} ><Link to="/">Home</Link></BreadcrumbLink>
   </BreadcrumbItem>
-
-  
-
+<BreadcrumbItem>
+    <BreadcrumbLink  fontWeight={'bold'} ><Link to="/products">Products</Link></BreadcrumbLink>
+  </BreadcrumbItem>
   <BreadcrumbItem isCurrentPage>
     <BreadcrumbLink >Bhagya KDM 01 Seeds</BreadcrumbLink>
   </BreadcrumbItem>
@@ -381,45 +381,10 @@ setBgColor1('')
  
     </Box>
     <Box padding={'10px'} >
-<Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Related Products </Text>
-     <Box width={{base:'100%',md:'70%',lg:'70%'}} paddingLeft={'5px'} >
-      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr',lg:'1fr 1fr 1fr'}}  justifyContent={'left'} alignItems={'center'} gap={'20px'}>
-           <GridItem>
-           <Link to={'/bhagyakdmseeds'}>
-            <Box >
-               <Box position={'relative'}>
-                <Image src="./brand11.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
-                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-               <Text fontSize={'14px'} fontWeight={'bold'}>-10%</Text>
-                </Box>
-                </Box>
-                <Box float={'left'}>
-               <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
-               <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
-                 <Link to="/bhagyakdmseeds">
-      <Button
-              as={'a'}
-              display={{ base: 'inline-flex', md: 'inline-flex' }}
-              height={'30px'}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'#1fb125'}
-             marginTop={'5px'}
-              _hover={{
-                bg: '#1fb125',
-              }}>
-             Buy Now
-            </Button>
-            </Link>
-               </Flex>
-               </Box>
-            </Box>
-            </Link>
-           {/* <ImageCard imageUrl="./brand1.webp" text="ODC 3 Seeds" href="/odc3seeds" /> */}
-           </GridItem>
+      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Related Products </Text>
+     <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr ',lg:'1fr 1fr 1fr '}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
+        
            <GridItem>
             <Link to={'/pkmseeds'}>
             <Box >
@@ -431,9 +396,12 @@ setBgColor1('')
                 </Box>
                 <Box float={'left'}>
                <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+               <Flex>
+               <Star rating={4.7} />
+               (18)
+               </Flex>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
-                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}
-              fontWeight={600} backgroundColor={'white'} border={'1px solid #1fb125'}>Check Price</Button>
+               
                  <Link to="/pkmseeds">
       <Button
               as={'a'}
@@ -447,7 +415,7 @@ setBgColor1('')
               _hover={{
                 bg: '#1fb125',
               }}>
-             Buy Now
+             Check Now
             </Button>
             </Link>
                </Flex>
@@ -455,7 +423,48 @@ setBgColor1('')
             </Box>
             </Link>
            </GridItem>
+           <GridItem>
+            <Link to={'/odc3seeds'}>
+            <Box  >
+               <Box position={'relative'}>
+                <Image src="./brand13.webp"  alt='odc3 seeds' borderRadius={'10px'}/>
+                <Box pos={'absolute'} top={'10px'} right={'5px'} width={'40px'} height={'40px'} backgroundColor={'red.600'} color={'white'} borderRadius={'50%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+               <Text fontSize={'14px'} fontWeight={'bold'}>-15%</Text>
+                </Box>
+                </Box>
+                <Box float={'left'}>
+               <Text fontSize={'2xl'} fontWeight={'bold'}> ODC 3 Drumstick Seeds</Text>
+               <Flex>
+               <Star rating={5} />
+               (22)
+               </Flex>
+                <Flex justifyContent={'space-between'} alignItems={'center'}>
+              
+                 <Link to="/odc3seeds">
+      <Button
+              as={'a'}
+              display={{ base: 'inline-flex', md: 'inline-flex' }}
+              height={'30px'}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              bg={'#1fb125'}
+             marginTop={'5px'}
+              _hover={{
+                bg: '#1fb125',
+              }}
+              
+              >
+             Check Now
+            </Button>
+            </Link>
+               </Flex>
+               </Box>
+            </Box>
+            </Link>
          
+           </GridItem>
+           
             </Grid>
       </Box>
       </Box>

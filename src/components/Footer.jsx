@@ -72,7 +72,7 @@ export default function Footer() {
     <Box
      background={'url(./pattern.webp)'}
      backgroundSize={'contain'}
-
+marginTop={'10px'}
    >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
