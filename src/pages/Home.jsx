@@ -69,7 +69,7 @@ const Home = () => {
       <Box padding={'10px'} >
       <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Our Top Selling </Text>
      <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
-      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr 1fr 1fr',lg:'1fr 1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
+      <Grid gridTemplateColumns={{base:'1fr',md:'1fr 1fr',lg:'1fr 1fr 1fr 1fr'}}  justifyContent={'center'} alignItems={'center'} gap={'20px'}>
            <GridItem>
            <Link to={'/products'}>
             <Box >
@@ -80,7 +80,7 @@ const Home = () => {
                 </Box>
                 </Box>
                 <Box float={'left'}>
-               <Text fontSize={'2xl'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
+               <Text fontSize={{base:'2xl',md:'2xl',lg:'2xl'}} textAlign={'left'} fontWeight={'bold'}> Bhagya KDM 01 Seeds</Text>
                <Flex>
                <Star rating={4.2} />
                (15)
@@ -119,7 +119,7 @@ const Home = () => {
                 </Box>
                 </Box>
                 <Box float={'left'}>
-               <Text fontSize={'2xl'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
+               <Text fontSize={{base:'2xl',md:'2xl',lg:'2xl'}} textAlign={'left'} fontWeight={'bold'}> PKM Drumstick Seeds</Text>
                <Flex>
                <Star rating={4.7} />
                (18)
@@ -157,7 +157,7 @@ const Home = () => {
                 </Box>
                 </Box>
                 <Box float={'left'}>
-               <Text fontSize={'2xl'} fontWeight={'bold'}> ODC 3 Drumstick Seeds</Text>
+               <Text fontSize={{base:'2xl',md:'2xl',lg:'2xl'}} textAlign={'left'} fontWeight={'bold'}> ODC3 Drumstick Seeds</Text>
                <Flex>
                <Star rating={5} />
                (22)
@@ -189,6 +189,7 @@ const Home = () => {
          
            </GridItem>
            <GridItem>
+           <Link to={'/products'}>
            <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -205,6 +206,7 @@ const Home = () => {
               alignItems={'center'}>
             More Products <ArrowRightIcon/>
             </Button>
+            </Link>
            </GridItem>
             </Grid>
       </Box>
@@ -236,7 +238,7 @@ const Home = () => {
           <GridItem marginTop={'10px'}> <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
           <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>PKM Drumstick Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}} >  PKM  Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
-      <Link to="/pkmseeds">
+      <Link to="/products">
     
       <Button
               as={'a'}
@@ -260,7 +262,7 @@ const Home = () => {
       <GridItem justifyContent={'center'} alignItems={'center'}  marginTop={'15px'} >  <Image src='./seeds.png' alt="seed image " margin={'auto'}/>
       <Text  as={'h1'} fontSize={{base:'3xl',md:'3xl',lg:'3xl'}} fontWeight={'bold'}>ODC 3 Drumstick Seeds</Text>
       <Text as={'h3'} fontSize={{base:'xl',md:'md',lg:'xl'}}> Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields.</Text>
-      <Link to="/odc3seeds">
+      <Link to="/products">
       <Button
               as={'a'}
               display={{ base: 'inline-flex', md: 'inline-flex' }}
@@ -410,7 +412,7 @@ const Home = () => {
     </Box></GridItem>
 
         </Grid>
-        <Box padding={'10px'} >
+        {/* <Box padding={'10px'} >
     <Grid templateColumns={{base:'1fr',lg:'1fr 1fr'}} justifyContent={'center'} alignItems={'center'}>
            <GridItem>
             <Image src="./contact.webp" alt="contactus image" display={{base:'none',md:'block',lg:'block'}} />
@@ -440,7 +442,7 @@ const Home = () => {
       </Stack>
            </GridItem>
         </Grid>
-        </Box>
+        </Box> */}
         <Footer/>
     </div>
   )

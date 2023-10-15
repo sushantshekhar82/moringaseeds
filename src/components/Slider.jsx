@@ -67,14 +67,19 @@ const Slider = () => {
         zIndex={1}
       >
         {images.map((_, index) => (
-          <Button
-            key={index}
-            mx={1}
-            size='xs'
-            borderRadius="full"
-            bg={index === currentSlide ? 'teal.500' : 'gray.200'}
-            onClick={() => goToSlide(index)}
-          />
+        <Button
+        key={index}
+        mx={1}
+        size={'xs'}
+        borderRadius="full"
+        bg={index === currentSlide ? 'teal.500' : 'gray.200'}
+        onClick={() => goToSlide(index)}
+        sx={{
+          width: '10px', // Adjust the width as needed
+          height: '10px', // Adjust the height as needed
+        }}
+      />
+      
         ))}
       </Flex>
      

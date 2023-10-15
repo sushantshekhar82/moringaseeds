@@ -298,17 +298,17 @@ import {
         {
           label: 'ODC 3',
           subLabel: '',
-          href: '/odc3seeds',
+          href: '/products',
         },
         {
           label: 'Bhagya KDM 01',
           subLabel: '',
-          href: '/bhagyakdmseeds',
+          href: '/products',
         },
         {
           label: 'PKM Seeds',
           subLabel: '',
-          href: '/pkmseeds',
+          href: '/products',
         },
         
         
