@@ -47,6 +47,53 @@
     background-position: 0 20px;
   }
 }
+@font-face {
+  font-family: Brygada1918;
+  src: url(../public/Brygada1918.ttf);
+}
+.outerbox{
+  position: relative;
+  background-image: url(../public/mobbackground.webp);
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+  background-size: cover;
+}
+
+  .outerbox2{
+  
+    background-image: url(../public//mobbackground.webp);
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    padding-bottom: 10px;
+  }
+  .zindex{
+    position: relative;
+    z-index: 2;
+  }
+  .aboutus{
+    color: white;
+    text-align: left;
+    padding:50px 50px 10px 50px;
+    font-size: 45px;
+    font-weight: bold;
+   
+  }
+  .aboutdetail{
+    width: 600px;
+    height: auto;
+    color: white;
+  
+   margin-left: 50px;
+   padding: 2px 2px 25px 25px;
+  font-weight: 400;
+     text-align: left;
+    font-size: 18px;
+    border: 1xp solid red;
+   
+    
+  }
 .form{
   background-color: transparent;
   width: 80%;
@@ -153,6 +200,26 @@ textarea{
 
 
     @media screen and (max-width:520px) {
+      .aboutus{
+        color: white;
+        text-align: left;
+        padding: 10px;
+        font-size: 35px;
+        font-weight: bold;
+      
+       padding-left: 20px;
+      }
+      
+      .aboutdetail{
+        width: unset;
+        height: auto;
+        color: white;
+         padding: 10px;
+         text-align: justify;
+         margin-left: unset;
+        font-size: 18px;
+        font-weight: 400;
+      }
       .intro{
         margin-top: 70px;
         width: 100%;
@@ -175,6 +242,7 @@ textarea{
       }
     
     }
+
     .whats-app {
       position: fixed;
       width: 50px;

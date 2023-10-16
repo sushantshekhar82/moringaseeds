@@ -26,6 +26,7 @@ import {
 import { Link } from 'react-router-dom'
 import { MdLocalShipping } from 'react-icons/md'
 import { FaCartArrowDown } from 'react-icons/fa'
+import { Helmet } from 'react-helmet';
 function Star({ rating }) {
   return (
     <Box display="flex" alignItems="center">
@@ -226,6 +227,12 @@ setBgColor1('')
       
   return (
     <Box >
+       <Helmet>
+  <meta charset="UTF-8"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
+<title>Bhagya KDM 01 Seeds </title>
+</Helmet>
     <Navbar/>
     <Box marginTop={'80px'} padding={'7px'}>
     <Breadcrumb fontSize={'md'} >
@@ -307,9 +314,7 @@ setBgColor1('')
             divider={
               <StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />
             }>
-          <Text fontSize={'18px'} color={'gray.600'} fontWeight={'bold'}>Superior Quality ODC 3 Drumstick Seeds from Reddy Agric Farmers
-
-            Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields</Text>
+          <Text fontSize={'18px'} color={'gray.600'} fontWeight={'bold'}>Bhagya KDM 01 Seeds Drumstick from Reddy Agric farmers for your agricultural needs. Our high-quality seeds ensure healthy and productive drumstick crops. Order now and experience the excellence of Reddy Agric farmers</Text>
             <Stack direction="column" alignItems="left" >
             
           <Flex alignItems={'center'} gap={1}>  <Image src='./free-delivery.png' alt='free delivery'/> Postage Charges Free for 500g and 1kg <Image src='./free-delivery.png' alt='free delivery'/>
@@ -320,19 +325,19 @@ setBgColor1('')
             </Flex>   
           </Stack>
           <Flex gap={1} flexWrap={'wrap'}>
-          <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}  onClick={()=>handlePrice(220,60,1)}
+          <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}  onClick={()=>handlePrice(250,60,1)}
               fontWeight={600} backgroundColor={bgColor1} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor1}}}>25g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(299,60,2)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(300,60,2)}
               fontWeight={600} backgroundColor={bgColor2} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor2}}}>50g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(400,60,3)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(450,60,3)}
               fontWeight={600} backgroundColor={bgColor3} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor3}}}>100g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(550,60,4)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(650,60,4)}
               fontWeight={600} backgroundColor={bgColor4} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor4}}}>150g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(750,60,5)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(950,60,5)}
               fontWeight={600} backgroundColor={bgColor5} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor5}}}>250g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(1400,0,6)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(1800,0,6)}
               fontWeight={600} backgroundColor={bgColor6} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor6}}}>500g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2200,0,7)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2500,0,7)}
               fontWeight={600} backgroundColor={bgColor7} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor7}}}>1kg</Button>
           </Flex>
           {/* <Box>

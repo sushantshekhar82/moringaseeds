@@ -51,6 +51,7 @@ import {
 } from '@chakra-ui/react'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 
 
@@ -201,6 +202,12 @@ const Products = () => {
   
   return (
     <Box >
+       <Helmet>
+  <meta charset="UTF-8"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
+<title>Reddy Agric Moringa Seeds | Drumstick Seeds </title>
+</Helmet>
          <Navbar/>
     <Box marginTop={'80px'} marginBottom={'20px'}>
 

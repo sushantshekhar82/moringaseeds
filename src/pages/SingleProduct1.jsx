@@ -26,6 +26,7 @@ import {
 import { Link } from 'react-router-dom'
 import { MdLocalShipping } from 'react-icons/md'
 import { FaCartArrowDown } from 'react-icons/fa'
+import { Helmet } from 'react-helmet';
 function Star({ rating }) {
   return (
     <Box display="flex" alignItems="center">
@@ -225,6 +226,12 @@ setBgColor1('')
       
   return (
     <Box >
+       <Helmet>
+  <meta charset="UTF-8"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
+<title>PKM Drumstick Seeds </title>
+</Helmet>
     <Navbar/>
     <Box marginTop={'80px'} padding={'7px'}>
     <Breadcrumb fontSize={'md'} >
@@ -309,9 +316,7 @@ setBgColor1('')
             divider={
               <StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />
             }>
-          <Text fontSize={'18px'} color={'gray.600'} fontWeight={'bold'}>Superior Quality ODC 3 Drumstick Seeds from Reddy Agric Farmers
-
-            Discover the excellence of ODC 3 Drumstick Seeds from Reddy Agric farmers. Our superior quality seeds ensure thriving drumstick plants with abundant yields</Text>
+          <Text fontSize={'18px'} color={'gray.600'} fontWeight={'bold'}>The finest PKM Seeds Drumstick seeds from Reddy Agric farmers. Our premium quality seeds guarantee robust and fruitful drumstick plants. Shop now and witness the expertise of Reddy Agric farmers</Text>
             <Stack direction="column" alignItems="left" >
             
           <Flex alignItems={'center'} gap={1}>  <Image src='./free-delivery.png' alt='free delivery'/> Postage Charges Free for 500g and 1kg <Image src='./free-delivery.png' alt='free delivery'/>
@@ -412,7 +417,7 @@ setBgColor1('')
     </Box>
     <Box padding={'10px'} >
       <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Related Products</Text>
-     <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
+     <Box width={{base:'100%',md:'80%',lg:'80%'}} paddingLeft={'5px'} >
      <Grid gridTemplateColumns={{base:'1fr 1fr',md:'1fr 1fr',lg:'1fr 1fr 1fr '}}  justifyContent={'center'} alignItems={'center'} gap={'10px'}>
           
           {

@@ -26,6 +26,7 @@ import {
 import { Link } from 'react-router-dom'
 import { MdLocalShipping } from 'react-icons/md'
 import { FaCartArrowDown } from 'react-icons/fa'
+import { Helmet } from 'react-helmet';
 function Star({ rating }) {
     return (
       <Box display="flex" alignItems="center">
@@ -225,6 +226,12 @@ setBgColor1('')
       
   return (
     <Box >
+       <Helmet>
+  <meta charset="UTF-8"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
+<title>ODC 3 Drumstick Seeds </title>
+</Helmet>
     <Navbar/>
     <Box marginTop={'80px'} padding={'7px'}>
     <Breadcrumb fontSize={'md'} >
@@ -325,17 +332,17 @@ setBgColor1('')
           <Flex gap={1} flexWrap={'wrap'}>
           <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'}  onClick={()=>handlePrice(220,60,1)}
               fontWeight={600} backgroundColor={bgColor1} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor1}}}>25g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(299,60,2)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(320,60,2)}
               fontWeight={600} backgroundColor={bgColor2} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor2}}}>50g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(400,60,3)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(420,60,3)}
               fontWeight={600} backgroundColor={bgColor3} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor3}}}>100g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(550,60,4)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(600,60,4)}
               fontWeight={600} backgroundColor={bgColor4} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor4}}}>150g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(750,60,5)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(900,60,5)}
               fontWeight={600} backgroundColor={bgColor5} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor5}}}>250g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(1400,0,6)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(1700,0,6)}
               fontWeight={600} backgroundColor={bgColor6} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor6}}}>500g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2200,0,7)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2500,0,7)}
               fontWeight={600} backgroundColor={bgColor7} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor7}}}>1kg</Button>
           </Flex>
           {/* <Box>
@@ -412,8 +419,8 @@ setBgColor1('')
  
     </Box>
     <Box padding={'10px'} >
-      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Our Top Selling </Text>
-     <Box width={{base:'100%',md:'100%',lg:'100%'}} paddingLeft={'5px'} >
+      <Text as={'h1'} fontSize={{base:'4xl',md:'5xl',lg:'5xl'}} textAlign={'left'} paddingLeft={'5px'} fontWeight={'bold'}  marginBottom={'5px'}  color={'black'}>Related Products </Text>
+     <Box width={{base:'100%',md:'80%',lg:'80%'}} paddingLeft={'5px'} >
      <Grid gridTemplateColumns={{base:'1fr 1fr',md:'1fr 1fr',lg:'1fr 1fr 1fr '}}  justifyContent={'center'} alignItems={'center'} gap={'10px'}>
           
           {

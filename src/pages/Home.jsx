@@ -189,6 +189,7 @@ const Home = () => {
          
            </GridItem>
            <GridItem>
+            <Image src="./contact.webp" alt='home delivery boy'/>
            <Link to={'/products'}>
            <Button
               as={'a'}
@@ -283,7 +284,7 @@ const Home = () => {
 
      <Box textAlign={'center'}>
         <Text
-              color={'#1fb125'}
+              color={'black'}
               marginTop={'20px'}
               fontSize={{base:'4xl',md:'5xl',lg:'5xl'}}
               fontWeight="bold"

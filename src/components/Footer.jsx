@@ -14,8 +14,10 @@ import {
   Image,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
+import { BsLinkedin } from 'react-icons/bs'
 
 const Logo = (props) => {
   return (
@@ -72,7 +74,7 @@ export default function Footer() {
     <Box
      background={'url(./pattern.webp)'}
      backgroundSize={'contain'}
-marginTop={'10px'}
+marginTop={'3px'}
    >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
@@ -85,44 +87,45 @@ marginTop={'10px'}
             </Box>
             <Text fontSize={'sm'}  color={'white'}>© 2022 Reddy Argic. All rights reserved</Text>
             <Stack direction={'row'} spacing={6} margin={'auto'}>
-              <SocialButton label={'Twitter'} href={'#'} >
-                <FaTwitter color='white' />
+              <SocialButton label={'Twitter'}  >
+              <a href='https://www.facebook.com/reddyagric?mibextid=cejktS' target='_blank'>  <FaFacebook color='white' /></a>
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube color='white' />
+            
+              <SocialButton label={'Instagram'} >
+              <a href='' target='_blank'>    <FaInstagram color='white'/></a>
               </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram color='white'/>
+              <SocialButton label={'YouTube'} >
+              <a href='https://wa.me/message/3GMQTL2HTRKQG1 ' target='_blank'>     <FaWhatsapp color='white' /></a>
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}    color={'white'}>
             <ListHeader>Quick Links</ListHeader>
-            <Box as="a" href={'#'}>
-             Home
+            <Box as="a">
+            <Link to='/'>Home</Link> 
             </Box>
-            <Box as="a" href={'#'}>
-             About Us
+            <Box as="a" >
+            <Link to='/aboutus'> About Us</Link>
             </Box>
-            <Box as="a" href={'#'}>
-            Seeds Brand
+            <Box as="a" >
+            <Link to='/products'>Seeds Brand</Link>
             </Box>
-            <Box as="a" href={'#'}>
-             Contact Us
+            <Box as="a" >
+            <Link to='/contactus'>  Contact Us </Link>
             </Box>
        
           </Stack>
           <Stack align={{base:'flex-start',md:'flex-end',lg:'center'}}    color={'white'}>
             <ListHeader>Our Brands</ListHeader>
       
-            <Box as="a" href={'#'}>
-            Bhagya KDM 01 Seeds
+            <Box as="a">
+            <Link to='/products'> Bhagya KDM 01 Seeds </Link>
             </Box>
-            <Box as="a" href={'#'}>
-            PKM Drumstick Seeds
+            <Box as="a">
+            <Link to='/products'> PKM Drumstick Seeds  </Link>
             </Box>
-            <Box as="a" href={'#'}>
-            ODC 3 Drumstick Seeds
+            <Box as="a">
+            <Link to='/products'> ODC 3 Drumstick Seeds  </Link>S
             </Box>
           </Stack>
           <Stack align={{base:'flex-start',md:'flex-end',lg:'flex-end'}}    color={'white'}>
@@ -139,6 +142,13 @@ marginTop={'10px'}
           </Stack>
         </SimpleGrid>
       </Container>
+      <Box display={'flex'} justifyContent={'center'} alignItems={'center'} fontSize={'10px'} width={'100%'} backgroundColor={'black'} color={'yellow'} gap={'10px'} textAlign={'center'} padding={'5px'}>
+        Designed and Developed by  Partha software 
+      <SocialButton label={'linkedin'}  >
+              <a href='https://www.linkedin.com/in/dakshinamurthy-n-p-314410237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ' target='_blank'>  <BsLinkedin color='white' /></a>
+              </SocialButton>
+             <Text color={'black'} fontSize={'5px'}> sushant</Text>
+      </Box>
     </Box>
   )
 }
