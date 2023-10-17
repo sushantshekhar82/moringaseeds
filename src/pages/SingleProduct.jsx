@@ -203,7 +203,7 @@ setBgColor1('')
       const handlePlaceOrder=async()=>{
         if(name!=="" && address!=="" && zipcode!=="" && city!=="" && mobile!=="" ){
           setTotalPrice(quantity*price)
-             window.location.href=`https://api.whatsapp.com/send?phone=918123811002&text=Product:${product}%20Quantity:${quantity}%20Name:${name}%20Address:${address}%20Zipcode:${zipcode}%20City:${city}%20Mobile:${mobile}`
+             window.location.href=`https://api.whatsapp.com/send?phone=918123811002&text=Product:${product}%20Quantity:${quantity}%20Weight:${weight}%20Name:${name}%20Address:${address}%20Zipcode:${zipcode}%20City:${city}%20Mobile:${mobile}`
        console.log(name,address,zipcode,city,mobile,totalPrice,quantity,weight)}
        else{
         toast({

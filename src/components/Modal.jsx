@@ -27,8 +27,8 @@ const HomeModal = () => {
        
        
   <Box padding={'10px'} >
-    <Grid templateColumns={{base:'1fr',lg:'1fr 1fr'}} justifyContent={'center'} alignItems={'center'}>
-           <GridItem>
+    <Grid templateColumns={{base:'1fr',md:'1fr 1fr',lg:'1fr 1fr'}} justifyContent={'center'} alignItems={'center'}>
+           <GridItem justifyContent={'center'} alignItems={'center'}>
             <Image src="./contact.webp" alt="contactus image" display={{base:'none',md:'block',lg:'block'}} />
            </GridItem>
            <GridItem width={{base:'100%'}}>
@@ -43,7 +43,7 @@ const HomeModal = () => {
         <form action="mailto:reddyagric@gmail.com" method="post" enctype="text/plain" autoComplete='off'>
    
     <input type="text" name="Name" placeholder="Name" required/><br/>
-    <input type="number" name="contact number" placeholder='Contact Number' required min="10" max="10"/>
+    <input type="number" name="contact number" placeholder='Contact Number' required minLength='10' maxLength='10'/>
     <input type="text" name="city" placeholder='City' required/>
     <input type="email" name="email" placeholder="Your Email" required/><br/>
     

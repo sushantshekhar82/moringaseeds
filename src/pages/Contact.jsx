@@ -12,9 +12,9 @@ const Contact = () => {
     <Box>
      <Helmet>
   <meta charset="UTF-8"/>
-<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com"/>
+<meta name="description" content="Reddy Agric where all best quality drumstick seeds or moringa seeds you get. Contactus:8123143554 whatsappus:8123811002 mailus:reddyagric@gmail.com Moringa Seeds. Moringa Seeds. Gmail. drumstickseeds@gmail.com. Contact Number. 8123143554. xClose Menu. Buy Now. contact us. Moringa Seeds Organic Farm"/>
 <meta name="keywords" content="moringaseeds, drumstickseeds, reddyagric,moringaseeds contact, reddyagric moringaseeds, reddyagric durmstickseeds, reddyagric contact, reddyagric moringaseeds contact , reddyagric durmstickseeds contact,"/>
-<title>Reddy Agric Moringa Seeds | Drumstick Seeds </title>
+<title>Contact us Reddy Agric Moringa Seeds | Drumstick Seeds </title>
 </Helmet>
         <Navbar/>
         <Box className='outerbox'>
