@@ -17,7 +17,7 @@ const HomeModal = () => {
   return (
     <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} closeOnOverlayClick={false} size="5xl" isCentered>
       <ModalOverlay />
-      <ModalContent bgImage="url(./pattern.webp)" bgSize="cover" minHeight="500px">
+      <ModalContent background="linear-gradient(90deg, hsla(58, 77%, 50%, 1) 0%, hsla(281, 95%, 52%, 1) 100%)"  bgSize="cover" minHeight="500px">
         <ModalHeader display="flex" justifyContent="space-between" alignItems="center">
           
           <CloseButton size="lg" color={'white'} onClick={() => setIsOpen(false)} />
