@@ -337,7 +337,7 @@ setBgColor1('')
               fontWeight={600} backgroundColor={bgColor5} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor5}}}>250g</Button>
                <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(1800,0,6)}
               fontWeight={600} backgroundColor={bgColor6} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor6}}}>500g</Button>
-               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2500,0,7)}
+               <Button   height={'30px'}   marginTop={'5px'}  fontSize={'sm'} onClick={()=>handlePrice(2900,0,7)}
               fontWeight={600} backgroundColor={bgColor7} border={'1px solid #1fb125'} _hover={{backgroundColor:{bgColor7}}}>1kg</Button>
           </Flex>
           {/* <Box>
