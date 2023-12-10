@@ -19,8 +19,10 @@ const AllRoutes = () => {
           <Route path='/bhagyakdmseeds' element={<SingleProducttwo/>}/>
           <Route path='/contactus' element={<Contact/>}/>
           <Route path='/aboutus' element={<About/>}/>
-          {/* <Route path='/contact-us' element={<Contact/>}/> */}
-          <Route path='/*' element={<Home />} />
+          <Route path='/contact-us' element={<Contact/>}/>
+          <Route path='/moringa-seeds-contact-number/45' element={<Contact/>}/>
+          <Route path='/moringa-seeds-contact-number/45/' element={<Contact/>}/>
+          <Route path='/*' element={<Contact />} />
           
           
       </Routes>
